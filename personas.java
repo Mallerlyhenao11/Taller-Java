@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+
 public class Personas {
 
     private int edad;
@@ -47,5 +48,8 @@ public class Personas {
             this.fechaNacimiento = fechaNacimiento;
         }  
         
+    }
+    public LocalDate calcularFechaNacimiento(int edad){
+        return LocalDate.now().minusYears(edad);
     }
 }
